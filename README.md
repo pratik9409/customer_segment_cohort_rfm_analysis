@@ -1,7 +1,10 @@
 # Customer Analytics Dashboard
 ## 📌 Project Overview
 This project focuses on analyzing customer purchasing behavior using Cohort Analysis, RFM (Recency, Frequency, Monetary) Analysis, and K-Means Clustering. By leveraging these techniques, businesses can gain insights into customer retention patterns, segment customers based on their transaction history, and tailor marketing strategies accordingly.
-Customer Analytics Dashboard designed to provide businesses with deep insights into customer purchasing behavior using machine learning techniques. The dashboard is built using Flask, PostgreSQL, and advanced data science methodologies to segment customers, predict churn, forecast sales, and detect anomalies.
+
+The Customer Analytics Dashboard is designed to provide businesses with deep insights into customer purchasing behavior using machine learning techniques. The dashboard is built using Flask, PostgreSQL, and advanced data science methodologies to segment customers, predict churn, forecast sales, detect anomalies, and conduct A/B Testing.
+
+The dashboard provides an interactive and visually appealing user interface that enables users to explore various customer analytics metrics efficiently.
 
 The dashboard provides an interactive and visually appealing user interface that enables users to explore various customer analytics metrics efficiently.
 ##🔥 Features
@@ -39,6 +42,12 @@ Helps detect fraudulent activities or uncommon purchasing behavior.
 ### 🛢 Database Integration
 Stores customer transaction data in PostgreSQL for scalability and efficient querying.
 Allows dynamic updates and supports real-time data analysis.
+
+### 🧪 A/B Testing
+Compares two groups of customers (Group A vs. Group B) to evaluate the impact of marketing campaigns, pricing strategies, or promotional offers.
+Uses statistical tests (e.g., t-test, chi-square test) to determine if differences in customer spending, engagement, or retention are significant.
+Helps businesses make data-driven decisions on which strategies work best.
+Results are visualized using interactive plots for easy comparison.
 
 
 ## 🏗 Tech Stack
