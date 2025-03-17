@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Customer Segmentation Dashboard</h2>
+
+    <!-- Dropdown for Cluster Selection -->
+    <form method="POST" class="my-3">
+        <label for="clusters">Select Number of Clusters:</label>
+        <select name="clusters" id="clusters" class="form-control" onchange="this.form.submit()">
+            <option value="3" {% if clusters == 3 %}selected{% endif %}>3 Clusters</option>
+            <option value="4" {% if clusters == 4 %}selected{% endif %}>4 Clusters</option>
+            <option value="5" {% if clusters == 5 %}selected{% endif %}>5 Clusters</option>
+        </select>
+    </form>
+
+    <!-- Chart Display -->
+    <div class="chart-container">
+        {{ plot_html | safe }}
+    </div>
+</div>
+{% endblock %}

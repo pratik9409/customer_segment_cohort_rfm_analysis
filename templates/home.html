@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Customer Analytics{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="text-center">
+        <h2 class="display-4">📊 Customer Analytics Dashboard</h2>
+        <p class="lead">Gain insights into customer behavior, segmentation, and predictions to drive business growth.</p>
+    </div>
+
+    <div class="card shadow-lg p-4 mt-4">
+        <h3 class="text-primary">🔍 Project Overview</h3>
+        <p>This platform provides a comprehensive analysis of customer purchasing patterns, helping businesses segment their customers, predict churn, forecast sales, and detect anomalies. The system is built using Flask, PostgreSQL, and various machine learning models.</p>
+    </div>
+
+    <div class="card shadow-lg p-4 mt-4">
+        <h3 class="text-success">🚀 Key Features</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>📌 Customer Segmentation:</strong> Uses RFM analysis and K-Means clustering to categorize customers based on their purchasing behavior.</li>
+            <li class="list-group-item"><strong>📅 Cohort Analysis:</strong> Tracks customer retention and engagement trends over time.</li>
+            <li class="list-group-item"><strong>🌍 Sales by Country:</strong> Analyzes sales distribution across different regions.</li>
+            <li class="list-group-item"><strong>💰 Customer Lifetime Value (LTV):</strong> Estimates the total revenue a business can expect from a customer.</li>
+            <li class="list-group-item"><strong>⚠️ Churn Prediction:</strong> Identifies customers at risk of leaving based on purchasing inactivity.</li>
+            <li class="list-group-item"><strong>📈 Sales Forecasting:</strong> Uses time-series forecasting techniques to predict future sales trends.</li>
+            <li class="list-group-item"><strong>🔍 Anomaly Detection:</strong> Detects unusual purchasing patterns to flag potential fraud or errors.</li>
+            <li class="list-group-item"><strong>🛢️ Database Integration:</strong> Stores customer transaction data in PostgreSQL, ensuring scalability and efficient querying.</li>
+            <li class="list-group-item"><strong>📊 Interactive Dashboard:</strong> Provides easy navigation to different analytical sections.</li>
+        </ul>
+    </div>
+
+    <div class="card shadow-lg p-4 mt-4">
+        <h3 class="text-warning">📌 Explore Insights</h3>
+        <div class="list-group">
+            <a href="/cohort" class="list-group-item list-group-item-action">📅 Cohort Analysis</a>
+            <a href="/country-sales" class="list-group-item list-group-item-action">🌍 Sales by Country</a>
+            <a href="/ltv" class="list-group-item list-group-item-action">💰 Customer Lifetime Value</a>
+            <a href="/churn" class="list-group-item list-group-item-action">⚠️ Churn Prediction</a>
+            <a href="/forecast" class="list-group-item list-group-item-action">📈 Sales Forecasting</a>
+            <a href="/anomalies" class="list-group-item list-group-item-action">🔍 Anomaly Detection</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
